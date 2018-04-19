@@ -41,4 +41,8 @@ class loginController extends controller {
         $this->loadView('cadastro', $dados);
     }
 
+        public function sair() {
+            unset($_SESSION['twlg']);
+            header("Location: /twitter");
+        }
     }
